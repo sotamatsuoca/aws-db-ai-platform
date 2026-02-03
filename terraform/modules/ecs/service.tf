@@ -1,3 +1,6 @@
+# ECS service running stateless inference workload
+# Designed for horizontal scaling behind ALB
+
 resource "aws_ecs_service" "this" {
   name            = "${var.name}-service"
   cluster         = var.cluster_arn

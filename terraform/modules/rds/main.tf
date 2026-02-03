@@ -7,7 +7,7 @@ resource "aws_db_instance" "this" {
   username = var.username
   password = var.password
 
-  multi_az = true
+  multi_az                = true
   backup_retention_period = 7
 
   skip_final_snapshot = true

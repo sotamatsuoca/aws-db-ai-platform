@@ -2,7 +2,7 @@
 
 A production-ready Terraform infrastructure-as-code (IaC) repository for deploying a scalable, AI-enabled platform on AWS.
 
-## 📋 Project Overview
+## Project Overview
 
 This repository contains modular Terraform configurations to deploy:
 - **VPC**: Isolated network with public/private subnets (planned)
@@ -16,7 +16,7 @@ This repository contains modular Terraform configurations to deploy:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
                         ┌─────────────┐
@@ -43,7 +43,7 @@ This repository contains modular Terraform configurations to deploy:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 terraform/
@@ -86,7 +86,7 @@ terraform/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -123,7 +123,7 @@ terraform plan
 
 ---
 
-## 📋 Phase 2: Prepare for Deployment (Before AWS)
+## Phase 2: Prepare for Deployment (Before AWS)
 
 ### Phase 2A: Infrastructure Code ✅ DONE
 - Modular VPC, IAM, ECS, RDS, CloudWatch modules
@@ -143,7 +143,7 @@ terraform plan
 
 ---
 
-## 🔐 Phase 3: AWS Account Setup & Deployment
+## Phase 3: AWS Account Setup & Deployment
 
 ### Prerequisites
 - [ ] AWS account created
@@ -202,11 +202,11 @@ terraform destroy
 # Confirm all resources gone in AWS Console
 ```
 
-**⚠️ Important:** Destroying removes databases, ECS tasks, and load balancers. Ensure backups are taken if needed.
+**Important:** Destroying removes databases, ECS tasks, and load balancers. Ensure backups are taken if needed.
 
 ---
 
-## 🎯 Why This Architecture?
+## Why This Architecture?
 
 | Choice | Reason |
 |--------|--------|
@@ -219,7 +219,7 @@ terraform destroy
 
 ---
 
-## 📊 Module Reference
+## Module Reference
 
 ### VPC Module
 ```hcl
@@ -264,7 +264,7 @@ module "rds" {
 
 ---
 
-## 🔍 Common Tasks
+## Common Tasks
 
 ### Change environment variable
 ```bash
@@ -294,7 +294,7 @@ terraform-docs markdown . > docs/terraform.md
 
 ---
 
-## ⚠️ Security Best Practices
+## Security Best Practices
 
 1. **Never commit secrets:**
    - Use `.gitignore` for `.tfstate`, `.terraform/`
@@ -317,7 +317,7 @@ terraform-docs markdown . > docs/terraform.md
 
 ---
 
-## 📚 Learning Resources
+## Learning Resources
 
 | Topic | Resource |
 |-------|----------|
@@ -328,7 +328,7 @@ terraform-docs markdown . > docs/terraform.md
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] **Phase 2B**: Subnets, NAT, ALB, SGs
 - [ ] **Phase 2C**: Secrets Manager, parameter groups
@@ -339,7 +339,7 @@ terraform-docs markdown . > docs/terraform.md
 
 ---
 
-## 💡 Interview Talking Points
+## Interview Talking Points
 
 1. **Modularity:** Why each resource is in its own module
 2. **State management:** Why S3 + DynamoDB is better than local state
@@ -349,7 +349,7 @@ terraform-docs markdown . > docs/terraform.md
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Validate syntax: `terraform validate`
 2. Format code: `terraform fmt -recursive .`
@@ -358,13 +358,13 @@ terraform-docs markdown . > docs/terraform.md
 
 ---
 
-## 📝 License
+## License
 
 [Add your license here - e.g., MIT, Apache 2.0]
 
 ---
 
-## 👤 Author
+## Author
 
 [Your name / team]
 

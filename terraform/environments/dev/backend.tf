@@ -1,15 +1,17 @@
-# Example remote backend (S3 + DynamoDB)
-# Uncomment and configure the values when ready.
+# Remote backend configuration (S3 + DynamoDB for state locking)
+# Uncomment and initialize after AWS account setup:
+#   terraform init -reconfigure
+#
 # terraform {
 #   backend "s3" {
-#     bucket         = "my-terraform-state-bucket"
-#     key            = "envs/dev/terraform.tfstate"
+#     bucket         = "example-tf-state"
+#     key            = "aws-db-ai-platform/dev.tfstate"
 #     region         = "ap-northeast-1"
 #     dynamodb_table = "terraform-locks"
 #   }
 # }
 
-# For now, using local backend as placeholder.
+# Local backend for now (development)
 terraform {
   backend "local" {}
 }
